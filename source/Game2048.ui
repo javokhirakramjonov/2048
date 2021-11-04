@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>373</width>
-    <height>413</height>
+    <height>490</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -23,7 +23,7 @@ background-color:black;
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>10</y>
+      <y>160</y>
       <width>85</width>
       <height>85</height>
      </rect>
@@ -52,7 +52,7 @@ color: #AEAEAE;
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>190</y>
+      <y>340</y>
       <width>85</width>
       <height>85</height>
      </rect>
@@ -81,7 +81,7 @@ color: #AEAEAE;
     <property name="geometry">
      <rect>
       <x>190</x>
-      <y>190</y>
+      <y>340</y>
       <width>85</width>
       <height>85</height>
      </rect>
@@ -110,7 +110,7 @@ color: #AEAEAE;
     <property name="geometry">
      <rect>
       <x>280</x>
-      <y>190</y>
+      <y>340</y>
       <width>85</width>
       <height>85</height>
      </rect>
@@ -139,7 +139,7 @@ color: #AEAEAE;
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>280</y>
+      <y>430</y>
       <width>85</width>
       <height>85</height>
      </rect>
@@ -168,7 +168,7 @@ color: #AEAEAE;
     <property name="geometry">
      <rect>
       <x>100</x>
-      <y>280</y>
+      <y>430</y>
       <width>85</width>
       <height>85</height>
      </rect>
@@ -197,7 +197,7 @@ color: #AEAEAE;
     <property name="geometry">
      <rect>
       <x>190</x>
-      <y>280</y>
+      <y>430</y>
       <width>85</width>
       <height>85</height>
      </rect>
@@ -226,7 +226,7 @@ color: #AEAEAE;
     <property name="geometry">
      <rect>
       <x>280</x>
-      <y>280</y>
+      <y>430</y>
       <width>85</width>
       <height>85</height>
      </rect>
@@ -255,7 +255,7 @@ color: #AEAEAE;
     <property name="geometry">
      <rect>
       <x>100</x>
-      <y>10</y>
+      <y>160</y>
       <width>85</width>
       <height>85</height>
      </rect>
@@ -284,7 +284,7 @@ color: #AEAEAE;
     <property name="geometry">
      <rect>
       <x>190</x>
-      <y>10</y>
+      <y>160</y>
       <width>85</width>
       <height>85</height>
      </rect>
@@ -313,7 +313,7 @@ color: #AEAEAE;
     <property name="geometry">
      <rect>
       <x>280</x>
-      <y>10</y>
+      <y>160</y>
       <width>85</width>
       <height>85</height>
      </rect>
@@ -342,7 +342,7 @@ color: #AEAEAE;
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>100</y>
+      <y>250</y>
       <width>85</width>
       <height>85</height>
      </rect>
@@ -371,7 +371,7 @@ color: #AEAEAE;
     <property name="geometry">
      <rect>
       <x>100</x>
-      <y>100</y>
+      <y>250</y>
       <width>85</width>
       <height>85</height>
      </rect>
@@ -400,7 +400,7 @@ color: #AEAEAE;
     <property name="geometry">
      <rect>
       <x>190</x>
-      <y>100</y>
+      <y>250</y>
       <width>85</width>
       <height>85</height>
      </rect>
@@ -429,7 +429,7 @@ color: #AEAEAE;
     <property name="geometry">
      <rect>
       <x>280</x>
-      <y>100</y>
+      <y>250</y>
       <width>85</width>
       <height>85</height>
      </rect>
@@ -458,7 +458,7 @@ color: #AEAEAE;
     <property name="geometry">
      <rect>
       <x>100</x>
-      <y>190</y>
+      <y>340</y>
       <width>85</width>
       <height>85</height>
      </rect>
@@ -481,6 +481,64 @@ color: #AEAEAE;
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Roboto Black</family>
+      <pointsize>33</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+      <strikeout>false</strikeout>
+      <stylestrategy>PreferAntialias</stylestrategy>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+color: #00cccc;
+}</string>
+    </property>
+    <property name="text">
+     <string>2048</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>50</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>50</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
     </property>
    </widget>
   </widget>
