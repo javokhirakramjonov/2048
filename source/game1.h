@@ -1,22 +1,22 @@
-#ifndef GAME2048_H
-#define GAME2048_H
+#ifndef GAME1_H
+#define GAME1_H
 
 #include <QMainWindow>
 
 QT_BEGIN_NAMESPACE
-namespace Ui { class Game2048; }
+namespace Ui { class GAME1; }
 QT_END_NAMESPACE
 
-class Game2048 : public QMainWindow
+class GAME1 : public QMainWindow
 {
     Q_OBJECT
 
 public:
-    Game2048(QWidget *parent = nullptr);
-    ~Game2048();
+    GAME1(QWidget *parent = nullptr);
+    ~GAME1();
 
 private:
-    Ui::Game2048 *ui;
+    Ui::GAME1 *ui;
 private:
     void keyPressEvent(QKeyEvent *event);
     void goup();
@@ -26,5 +26,6 @@ private:
     void gorandom();
     void docopy();
     void check();
+    void setcolor();
 };
-#endif // GAME2048_H
+#endif // GAME1_H

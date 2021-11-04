@@ -9,19 +9,14 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    Game2048.cpp \
-    main.cpp
+    main.cpp \
+    game1.cpp
 
 HEADERS += \
-    Game2048.h
+    game1.h
 
 FORMS += \
-    Game2048.ui
-
-TRANSLATIONS += \
-    2048_en_US.ts
-CONFIG += lrelease
-CONFIG += embed_translations
+    game1.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
