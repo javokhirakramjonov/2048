@@ -2,19 +2,24 @@
 #include "ui_game1.h"
 #include <QKeyEvent>
 #include <qvector.h>
-#include <bits/stdc++.h>
+#include <cmath>
 
 QString value;
 int num;
 QLabel *a[6][6];
 QString copy[6][6];
 QString colors[15];
+QPushButton *re;
+bool over = false;
 
 GAME1::GAME1(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::GAME1)
 {
     ui->setupUi(this);
+    re = GAME1::findChild<QPushButton *>("restart");
+    connect(re, SIGNAL(released()), this, SLOT(restart()));
+//    re->setEnabled(false);
     colors[0] = "#C7C7C7";
     colors[1] = "#DFDFDF";
     colors[2] = "#294763";
@@ -35,11 +40,10 @@ GAME1::GAME1(QWidget *parent)
             for(int j = 1; j < 5; ++ j)
             {
                 a[i][j] = GAME1::findChild<QLabel *>("c" + QString::number(i) + QString::number(j));
+                a[i][j]->setFocus();
             }
         }
-    gorandom();
-    gorandom();
-    setcolor();
+    restart();
 }
 
 GAME1::~GAME1()
@@ -49,14 +53,17 @@ GAME1::~GAME1()
 
 void GAME1::keyPressEvent(QKeyEvent *event)
 {
-    if(event->key() == Qt::Key_Up)
-        GAME1::goup();
-    else if(event->key() == Qt::Key_Right)
-        GAME1::goright();
-    else if(event->key() == Qt::Key_Down)
-        GAME1::godown();
-    else if(event->key() == Qt::Key_Left)
-        GAME1::goleft();
+    if(!over)
+    {
+        if(event->key() == Qt::Key_Up)
+            GAME1::goup();
+        else if(event->key() == Qt::Key_Right)
+            GAME1::goright();
+        else if(event->key() == Qt::Key_Down)
+            GAME1::godown();
+        else if(event->key() == Qt::Key_Left)
+            GAME1::goleft();
+    }
 }
 void GAME1::goup()
 {
@@ -72,6 +79,7 @@ void GAME1::goup()
             if(b[j] == b[j - 1])
             {
                 b[j - 1] <<= 1;
+                goadd(b[j - 1]);
                 b[j] = 0;
             }
         }
@@ -96,6 +104,7 @@ void GAME1::goup()
     }
     check();
     setcolor();
+    isover();
 }
 
 void GAME1::goright()
@@ -112,6 +121,7 @@ void GAME1::goright()
             if(b[j] == b[j - 1])
             {
                 b[j - 1] <<= 1;
+                goadd(b[j - 1]);
                 b[j] = 0;
             }
         }
@@ -136,6 +146,7 @@ void GAME1::goright()
     }
     check();
     setcolor();
+    isover();
 }
 
 void GAME1::godown(){
@@ -151,6 +162,7 @@ void GAME1::godown(){
             if(b[j] == b[j - 1])
             {
                 b[j - 1] <<= 1;
+                goadd(b[j - 1]);
                 b[j] = 0;
             }
         }
@@ -175,6 +187,7 @@ void GAME1::godown(){
     }
     check();
     setcolor();
+    isover();
 }
 
 void GAME1::goleft()
@@ -191,6 +204,7 @@ void GAME1::goleft()
             if(b[j] == b[j - 1])
             {
                 b[j - 1] <<= 1;
+                goadd(b[j - 1]);
                 b[j] = 0;
             }
         }
@@ -215,6 +229,7 @@ void GAME1::goleft()
     }
     check();
     setcolor();
+    isover();
 }
 
 void GAME1::gorandom()
@@ -225,10 +240,10 @@ void GAME1::gorandom()
             if(a[i][j]->text() != "")
                 mx = qMax(mx, a[i][j]->text().toInt());
     int mp = log2(mx);
+    mp = qMax(1, mp - 3);
     srand(time(0));
     mp = rand() % mp;
-    ++ mp;
-    mp = qMax(1, mp - 2);
+    mp = qMax(1, mp);
     QVector<QPair<int, int> > emce;
     for(int i = 1; i < 5; ++ i)
         for(int j = 1; j < 5; ++ j)
@@ -281,5 +296,52 @@ void GAME1::setcolor()
             a[i][j]->setStyleSheet(changes);
         }
     }
+}
+
+void GAME1::goadd(int add)
+{
+    ui->score->setText(QString::number(add + ui->score->text().toInt()));
+    ui->record->setText(QString::number(qMax(ui->record->text().toInt(), ui->score->text().toInt())));
+}
+
+void GAME1::isover()
+{
+    bool cancel = false;
+    for(int i = 1; i < 5; ++ i)
+    {
+        for(int j = 1; j < 5; ++ j)
+        {
+            if(i + 1 < 5 && a[i][j]->text() != "" && a[i][j]->text() == a[i + 1][j]->text())
+                cancel = true;
+            if(j + 1 < 5 && a[i][j]->text() != "" && a[i][j]->text() == a[i][j + 1]->text())
+                cancel = true;
+            if(a[i][j]->text() == "")
+                cancel = true;
+        }
+    }
+    if(!cancel)
+    {
+        ui->over->setVisible(true);
+        ui->over->setText("Game is over\nYour score:\n" + ui->score->text());
+        over = true;
+    }
+}
+
+void GAME1::restart()
+{
+    over = false;
+    ui->over->setVisible(false);
+    ui->score->setText("0");
+    for(int i = 1; i < 5; ++ i)
+    {
+        for(int j = 1; j < 5; ++ j)
+        {
+            a[i][j]->setText("");
+            a[i][j]->setFocus();
+        }
+    }
+    gorandom();
+    gorandom();
+    setcolor();
 }
 

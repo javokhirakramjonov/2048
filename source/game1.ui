@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>371</width>
-    <height>418</height>
+    <height>609</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -23,7 +23,7 @@ background-color:#AEAEAE;
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>10</y>
+      <y>180</y>
       <width>85</width>
       <height>85</height>
      </rect>
@@ -37,8 +37,8 @@ background-color:#AEAEAE;
     </property>
     <property name="styleSheet">
      <string notr="true">QLabel{
-background-color:#DFDFDF;
-color:#9C9C9C;
+background-color: #DFDFDF;
+color: rgb(46, 52, 54);
 }</string>
     </property>
     <property name="text">
@@ -52,7 +52,7 @@ color:#9C9C9C;
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>190</y>
+      <y>360</y>
       <width>85</width>
       <height>85</height>
      </rect>
@@ -66,8 +66,8 @@ color:#9C9C9C;
     </property>
     <property name="styleSheet">
      <string notr="true">QLabel{
-background-color:#DFDFDF;
-color:#9C9C9C;
+background-color: #DFDFDF;
+color: rgb(46, 52, 54);
 }</string>
     </property>
     <property name="text">
@@ -81,7 +81,7 @@ color:#9C9C9C;
     <property name="geometry">
      <rect>
       <x>100</x>
-      <y>190</y>
+      <y>360</y>
       <width>85</width>
       <height>85</height>
      </rect>
@@ -95,8 +95,8 @@ color:#9C9C9C;
     </property>
     <property name="styleSheet">
      <string notr="true">QLabel{
-background-color:#DFDFDF;
-color:#9C9C9C;
+background-color: #DFDFDF;
+color: rgb(46, 52, 54);
 }</string>
     </property>
     <property name="text">
@@ -110,7 +110,7 @@ color:#9C9C9C;
     <property name="geometry">
      <rect>
       <x>190</x>
-      <y>190</y>
+      <y>360</y>
       <width>85</width>
       <height>85</height>
      </rect>
@@ -124,8 +124,8 @@ color:#9C9C9C;
     </property>
     <property name="styleSheet">
      <string notr="true">QLabel{
-background-color:#DFDFDF;
-color:#9C9C9C;
+background-color: #DFDFDF;
+color: rgb(46, 52, 54);
 }</string>
     </property>
     <property name="text">
@@ -139,7 +139,7 @@ color:#9C9C9C;
     <property name="geometry">
      <rect>
       <x>280</x>
-      <y>190</y>
+      <y>360</y>
       <width>85</width>
       <height>85</height>
      </rect>
@@ -153,8 +153,8 @@ color:#9C9C9C;
     </property>
     <property name="styleSheet">
      <string notr="true">QLabel{
-background-color:#DFDFDF;
-color:#9C9C9C;
+background-color: #DFDFDF;
+color: rgb(46, 52, 54);
 }</string>
     </property>
     <property name="text">
@@ -168,7 +168,7 @@ color:#9C9C9C;
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>280</y>
+      <y>450</y>
       <width>85</width>
       <height>85</height>
      </rect>
@@ -182,8 +182,8 @@ color:#9C9C9C;
     </property>
     <property name="styleSheet">
      <string notr="true">QLabel{
-background-color:#DFDFDF;
-color:#9C9C9C;
+background-color: #DFDFDF;
+color: rgb(46, 52, 54);
 }</string>
     </property>
     <property name="text">
@@ -197,7 +197,7 @@ color:#9C9C9C;
     <property name="geometry">
      <rect>
       <x>100</x>
-      <y>280</y>
+      <y>450</y>
       <width>85</width>
       <height>85</height>
      </rect>
@@ -211,8 +211,8 @@ color:#9C9C9C;
     </property>
     <property name="styleSheet">
      <string notr="true">QLabel{
-background-color:#DFDFDF;
-color:#9C9C9C;
+background-color: #DFDFDF;
+color: rgb(46, 52, 54);
 }</string>
     </property>
     <property name="text">
@@ -226,7 +226,7 @@ color:#9C9C9C;
     <property name="geometry">
      <rect>
       <x>190</x>
-      <y>280</y>
+      <y>450</y>
       <width>85</width>
       <height>85</height>
      </rect>
@@ -240,8 +240,8 @@ color:#9C9C9C;
     </property>
     <property name="styleSheet">
      <string notr="true">QLabel{
-background-color:#DFDFDF;
-color:#9C9C9C;
+background-color: #DFDFDF;
+color: rgb(46, 52, 54);
 }</string>
     </property>
     <property name="text">
@@ -255,7 +255,7 @@ color:#9C9C9C;
     <property name="geometry">
      <rect>
       <x>280</x>
-      <y>280</y>
+      <y>450</y>
       <width>85</width>
       <height>85</height>
      </rect>
@@ -269,8 +269,8 @@ color:#9C9C9C;
     </property>
     <property name="styleSheet">
      <string notr="true">QLabel{
-background-color:#DFDFDF;
-color:#9C9C9C;
+background-color: #DFDFDF;
+color: rgb(46, 52, 54);
 }</string>
     </property>
     <property name="text">
@@ -284,7 +284,7 @@ color:#9C9C9C;
     <property name="geometry">
      <rect>
       <x>100</x>
-      <y>10</y>
+      <y>180</y>
       <width>85</width>
       <height>85</height>
      </rect>
@@ -298,8 +298,8 @@ color:#9C9C9C;
     </property>
     <property name="styleSheet">
      <string notr="true">QLabel{
-background-color:#DFDFDF;
-color:#9C9C9C;
+background-color: #DFDFDF;
+color: rgb(46, 52, 54);
 }</string>
     </property>
     <property name="text">
@@ -313,7 +313,7 @@ color:#9C9C9C;
     <property name="geometry">
      <rect>
       <x>190</x>
-      <y>10</y>
+      <y>180</y>
       <width>85</width>
       <height>85</height>
      </rect>
@@ -327,8 +327,8 @@ color:#9C9C9C;
     </property>
     <property name="styleSheet">
      <string notr="true">QLabel{
-background-color:#DFDFDF;
-color:#9C9C9C;
+background-color: #DFDFDF;
+color: rgb(46, 52, 54);
 }</string>
     </property>
     <property name="text">
@@ -342,7 +342,7 @@ color:#9C9C9C;
     <property name="geometry">
      <rect>
       <x>280</x>
-      <y>10</y>
+      <y>180</y>
       <width>85</width>
       <height>85</height>
      </rect>
@@ -356,8 +356,8 @@ color:#9C9C9C;
     </property>
     <property name="styleSheet">
      <string notr="true">QLabel{
-background-color:#DFDFDF;
-color:#9C9C9C;
+background-color: #DFDFDF;
+color: rgb(46, 52, 54);
 }</string>
     </property>
     <property name="text">
@@ -371,7 +371,7 @@ color:#9C9C9C;
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>100</y>
+      <y>270</y>
       <width>85</width>
       <height>85</height>
      </rect>
@@ -385,8 +385,8 @@ color:#9C9C9C;
     </property>
     <property name="styleSheet">
      <string notr="true">QLabel{
-background-color:#DFDFDF;
-color:#9C9C9C;
+background-color: #DFDFDF;
+color: rgb(46, 52, 54);
 }</string>
     </property>
     <property name="text">
@@ -400,7 +400,7 @@ color:#9C9C9C;
     <property name="geometry">
      <rect>
       <x>100</x>
-      <y>100</y>
+      <y>270</y>
       <width>85</width>
       <height>85</height>
      </rect>
@@ -414,8 +414,8 @@ color:#9C9C9C;
     </property>
     <property name="styleSheet">
      <string notr="true">QLabel{
-background-color:#DFDFDF;
-color:#9C9C9C;
+background-color: #DFDFDF;
+color: rgb(46, 52, 54);
 }</string>
     </property>
     <property name="text">
@@ -429,7 +429,7 @@ color:#9C9C9C;
     <property name="geometry">
      <rect>
       <x>190</x>
-      <y>100</y>
+      <y>270</y>
       <width>85</width>
       <height>85</height>
      </rect>
@@ -443,8 +443,8 @@ color:#9C9C9C;
     </property>
     <property name="styleSheet">
      <string notr="true">QLabel{
-background-color:#DFDFDF;
-color:#9C9C9C;
+background-color: #DFDFDF;
+color: rgb(46, 52, 54);
 }</string>
     </property>
     <property name="text">
@@ -458,7 +458,7 @@ color:#9C9C9C;
     <property name="geometry">
      <rect>
       <x>280</x>
-      <y>100</y>
+      <y>270</y>
       <width>85</width>
       <height>85</height>
      </rect>
@@ -472,8 +472,8 @@ color:#9C9C9C;
     </property>
     <property name="styleSheet">
      <string notr="true">QLabel{
-background-color:#DFDFDF;
-color:#9C9C9C;
+background-color: #DFDFDF;
+color: rgb(46, 52, 54);
 }</string>
     </property>
     <property name="text">
@@ -483,6 +483,253 @@ color:#9C9C9C;
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
+   <widget class="QLabel" name="title">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>131</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>41</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <kerning>false</kerning>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+color: #FFF000;
+}</string>
+    </property>
+    <property name="text">
+     <string>2048</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::AutoText</enum>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="restart">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>120</y>
+      <width>221</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+      <pointsize>13</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+background-color: rgb(61, 56, 70);
+color: rgb(192, 191, 188);
+}</string>
+    </property>
+    <property name="text">
+     <string>RESTART</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="record">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>85</y>
+      <width>110</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Open Sans</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+color: white;
+}</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="sco">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>60</y>
+      <width>110</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Open Sans</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+color: #5F9EA0;
+}</string>
+    </property>
+    <property name="text">
+     <string>SCORE</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="score">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>85</y>
+      <width>110</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Open Sans</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+color: white;
+}</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="rec">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>60</y>
+      <width>110</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Open Sans</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+color: #5F9EA0;
+}</string>
+    </property>
+    <property name="text">
+     <string>BEST</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="back_score">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>60</y>
+      <width>221</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+background-color: rgb(46, 52, 54);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="over">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>180</y>
+      <width>356</width>
+      <height>356</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Source Code Pro</family>
+      <pointsize>37</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+color: #FFF000;
+background-color: rgba(46, 52, 54, 200);
+}</string>
+    </property>
+    <property name="text">
+     <string>Your score:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <zorder>c11</zorder>
+   <zorder>c31</zorder>
+   <zorder>c32</zorder>
+   <zorder>c33</zorder>
+   <zorder>c34</zorder>
+   <zorder>c41</zorder>
+   <zorder>c42</zorder>
+   <zorder>c43</zorder>
+   <zorder>c44</zorder>
+   <zorder>c12</zorder>
+   <zorder>c13</zorder>
+   <zorder>c14</zorder>
+   <zorder>c21</zorder>
+   <zorder>c22</zorder>
+   <zorder>c23</zorder>
+   <zorder>c24</zorder>
+   <zorder>title</zorder>
+   <zorder>restart</zorder>
+   <zorder>back_score</zorder>
+   <zorder>record</zorder>
+   <zorder>score</zorder>
+   <zorder>rec</zorder>
+   <zorder>sco</zorder>
+   <zorder>over</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">

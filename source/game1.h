@@ -17,7 +17,6 @@ public:
 
 private:
     Ui::GAME1 *ui;
-private:
     void keyPressEvent(QKeyEvent *event);
     void goup();
     void goright();
@@ -27,5 +26,9 @@ private:
     void docopy();
     void check();
     void setcolor();
+    void goadd(int add);
+    void isover();
+private slots:
+    void restart();
 };
 #endif // GAME1_H
