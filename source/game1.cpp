@@ -236,34 +236,24 @@ void GAME1::goleft()
 void GAME1::gorandom()
 {
     srand(time(0));
-    if(rand() % 3 > 0)
-    {
-        int mx = 2;
-        for(int i = 1; i < 5; ++ i)
-            for(int j = 1; j < 5; ++ j)
-                if(a[i][j]->text() != "")
-                    mx = qMax(mx, a[i][j]->text().toInt());
-        int mp = log2(mx);
-        mp = qMax(1, mp - 3);
-        mp = rand() % mp;
-        mp = qMax(1, mp);
-        QVector<QPair<int, int> > emce;
-        for(int i = 1; i < 5; ++ i)
-            for(int j = 1; j < 5; ++ j)
-                if(a[i][j]->text() == "")
-                    emce.push_back(qMakePair(i, j));
-        if(emce.empty())
-            return;
-        QPair<int, int> x = emce[rand() % (int)emce.size()];
-        if(ran == 4)
-        {
-            a[x.first][x.second]->setText(QString::number(1 << mp));
-            ran = 0;
-        } else {
-            a[x.first][x.second]->setText(QString::number(2));
-            ++ ran;
-        }
-    }
+    int mx = 2;
+    for(int i = 1; i < 5; ++ i)
+        for(int j = 1; j < 5; ++ j)
+            if(a[i][j]->text() != "")
+                mx = qMax(mx, a[i][j]->text().toInt());
+    int mp = log2(mx);
+    mp = qMax(1, mp - 3);
+    mp = rand() % mp;
+    mp = qMax(1, mp);
+    QVector<QPair<int, int> > emce;
+    for(int i = 1; i < 5; ++ i)
+        for(int j = 1; j < 5; ++ j)
+            if(a[i][j]->text() == "")
+                emce.push_back(qMakePair(i, j));
+    if(emce.empty())
+        return;
+    QPair<int, int> x = emce[rand() % (int)emce.size()];
+    a[x.first][x.second]->setText(QString::number(1 << mp));
 }
 
 void GAME1::docopy()
