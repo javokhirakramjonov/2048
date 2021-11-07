@@ -11,7 +11,8 @@ QString copy[6][6];
 QString colors[15];
 QPushButton *re;
 bool over = false;
-
+int ran = 0;
+int paydo = 0;
 GAME1::GAME1(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::GAME1)
@@ -234,25 +235,35 @@ void GAME1::goleft()
 
 void GAME1::gorandom()
 {
-    int mx = 2;
-    for(int i = 1; i < 5; ++ i)
-        for(int j = 1; j < 5; ++ j)
-            if(a[i][j]->text() != "")
-                mx = qMax(mx, a[i][j]->text().toInt());
-    int mp = log2(mx);
-    mp = qMax(1, mp - 3);
     srand(time(0));
-    mp = rand() % mp;
-    mp = qMax(1, mp);
-    QVector<QPair<int, int> > emce;
-    for(int i = 1; i < 5; ++ i)
-        for(int j = 1; j < 5; ++ j)
-            if(a[i][j]->text() == "")
-                emce.push_back(qMakePair(i, j));
-    if(emce.empty())
-        return;
-    QPair<int, int> x = emce[rand() % (int)emce.size()];
-    a[x.first][x.second]->setText(QString::number(1 << mp));
+    if(rand() % 3 > 0)
+    {
+        int mx = 2;
+        for(int i = 1; i < 5; ++ i)
+            for(int j = 1; j < 5; ++ j)
+                if(a[i][j]->text() != "")
+                    mx = qMax(mx, a[i][j]->text().toInt());
+        int mp = log2(mx);
+        mp = qMax(1, mp - 3);
+        mp = rand() % mp;
+        mp = qMax(1, mp);
+        QVector<QPair<int, int> > emce;
+        for(int i = 1; i < 5; ++ i)
+            for(int j = 1; j < 5; ++ j)
+                if(a[i][j]->text() == "")
+                    emce.push_back(qMakePair(i, j));
+        if(emce.empty())
+            return;
+        QPair<int, int> x = emce[rand() % (int)emce.size()];
+        if(ran == 4)
+        {
+            a[x.first][x.second]->setText(QString::number(1 << mp));
+            ran = 0;
+        } else {
+            a[x.first][x.second]->setText(QString::number(2));
+            ++ ran;
+        }
+    }
 }
 
 void GAME1::docopy()
